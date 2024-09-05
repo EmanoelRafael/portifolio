@@ -1,10 +1,11 @@
 import { Html, useProgress } from '@react-three/drei'
-import { progress } from 'framer-motion'
 
 const Loader = () => {
+  const { progress } = useProgress();
+
   return (
     <Html>
-      <span className='canvas-load'>
+      <span className='canvas-loader'>
         <p
           style={{
             fontSize: 14,
