@@ -19,12 +19,12 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915eff]'>Emanoel</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a computer engineering studant <br className='sm:block hidden'/>
-            contact-me for more information
+            I'm a computer engineering student <br className='sm:block hidden'/>
+            and I solve problems with technology.
           </p>
         </div>
 
-        {/* <ComputersCanvas /> */}
+         {/* <ComputersCanvas />  */}
 
         <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
           <a href="#about">
