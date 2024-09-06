@@ -2,6 +2,7 @@
   "name": "portifolio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "portifolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
