@@ -1,11 +1,11 @@
 import logo from "./logo.png";
 import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import data_analysis from "./data_analysis.png";
+import data_engineering from "./data_engineering.png";
+import software_engineering from "./software_engineering.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -20,22 +20,28 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import pandas from "./tech/pandas.png";
+import python from "./tech/python.png";
+import spring from "./tech/spring.png";
+import sql from "./tech/sql.png";
+import angular from "./tech/angular.png";
+import java from "./tech/java.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import motorola from "./company/motorola.png";
+import cin_ufpe from "./company/cin-ufpe.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import secou from "./secou.png";
 
 export {
   logo,
   backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,
@@ -59,4 +65,16 @@ export {
   carrent,
   jobit,
   tripguide,
+  secou,
+  pandas,
+  python,
+  spring,
+  sql,
+  data_analysis,
+  data_engineering,
+  software_engineering,
+  angular,
+  java,
+  cin_ufpe,
+  motorola,
 };

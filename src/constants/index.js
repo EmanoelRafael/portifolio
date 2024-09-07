@@ -1,28 +1,21 @@
 import {
-    mobile,
+    data_analysis,
     backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
+    software_engineering,
+    data_engineering,
+    angular,
+    java,
+    spring,
+    python,
+    pandas,
+    sql,
     git,
-    figma,
     docker,
-    meta,
     starbucks,
     tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    secou,
+    motorola,
+    cin_ufpe,
   } from "../assets";
   
   export const navLinks = [
@@ -42,224 +35,110 @@ import {
   
   const services = [
     {
-      title: "First Service",
-      icon: web,
-    },
-    {
-      title: "Second Service",
-      icon: mobile,
-    },
-    {
-      title: "Third Service",
+      title: "Backend Developer",
       icon: backend,
     },
     {
-      title: "Fourth Service",
-      icon: creator,
+      title: "Data Analysis",
+      icon: data_analysis,
+    },
+    {
+      title: "Data Engineering",
+      icon: data_engineering,
+    },
+    {
+      title: "Software Engineering",
+      icon: software_engineering,
     },
   ];
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "Angular",
+      icon: angular,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "Java",
+      icon: java,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
+      name: "Spring",
+      icon: spring,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "Python",
+      icon: python,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "Pandas",
+      icon: pandas,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Docker",
+      icon: docker,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
+      name: "Git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
+      name: "SQL",
+      icon: sql,
     },
   ];
   
   const experiences = [
     {
-      title: "Experience Title",
-      company_name: "Company Name",
-      icon: starbucks,
+      title: "Teacher Assistant of Data Structures and Algorithms ",
+      company_name: "Cin-UFPE",
+      icon: cin_ufpe,
       iconBg: "#383E56",
-      date: "Month 20xx - Month 20xx",
+      date: "Feb 2022 - Jul 2022",
       points: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+        "Assist the teacher in preparing exercise lists.",
+        "Prepare and teach tutoring classes.",
+        "Correct students' exercise lists, checking for syntax and logic errors in the codes.",
+        "Assist students in classes, clarifying possible doubts regarding algorithms and data structures while solving the exercise lists.",
       ],
     },
     {
-      title: "Experience Title",
-      company_name: "Company Name",
-      icon: tesla,
+      title: "Internship at the Cin-Motorola project",
+      company_name: "Fade-UFPE",
+      icon: motorola,
       iconBg: "#E6DEDD",
-      date: "Month 20xx - Month 20xx",
+      date: "Jun 2022 - Jun 2024",
       points: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-      ],
-    },
-    {
-      title: "Experience Title",
-      company_name: "Company Name",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Month 20xx - Month 20xx",
-      points: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-      ],
-    },
-    {
-      title: "Experience Title",
-      company_name: "Company Name",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Month 20xx - Month 20xx",
-      points: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+        "I worked on the development of an audio test automation tool at the Cin-Motorola agreement.",
+        "Performing validation tests for the tool.",
+        "Analysis of the results of the validation tests, producing visual material for later sharing with the team.",
+        "Development and maintenance of machine learning models for use in research.",
       ],
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
   
   const projects = [
     {
-      name: "Project Name",
+      name: "Secou",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.",
+        "Secou is an application that consists in monitoring and informing the flooded points of a city.",
       tags: [
         {
-          name: "techName",
+          name: "ionic",
           color: "blue-text-gradient",
         },
         {
-          name: "techName",
+          name: "fastAPI",
           color: "green-text-gradient",
         },
         {
-          name: "techName",
+          name: "TypeScript",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Project Name",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.",
-      tags: [
-        {
-          name: "techName",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "techName",
-          color: "green-text-gradient",
-        },
-        {
-          name: "techName",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Project Name",
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.",
-      tags: [
-        {
-          name: "techName",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "techName",
-          color: "green-text-gradient",
-        },
-        {
-          name: "techName",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: secou,
+      source_code_link: "https://github.com/saranicoly/secou",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

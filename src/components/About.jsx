@@ -44,16 +44,16 @@ const About = () => {
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-          Lorem Ipsum is simply dummy text of the printing and 
-          typesetting industry. Lorem Ipsum has been the industry's 
-          standard dummy text ever since the 1500s, when an unknown 
-          printer took a galley of type and scrambled it to make a 
-          type specimen book. It has survived not only five centuries, 
-          but also the leap into electronic typesetting, remaining 
-          essentially unchanged. It was popularised in the 1960s with 
-          the release of Letraset sheets containing Lorem Ipsum 
-          passages, and more recently with desktop publishing software 
-          like Aldus PageMaker including versions of Lorem Ipsum.
+          Welcome to my portfolio! I am Emanoel Rafael, a computer engineering student 
+          at the Computer Science Center of the Federal University of Pernambuco. 
+          I entered the technology field in 2021 and since then I 
+          have been gaining more and more affinity with the area. 
+          I believe that the advancement of society is directly 
+          related to the advancement of technology. Among the vast range of 
+          content to which I was exposed during my undergraduate 
+          studies, I was most interested in the areas of Data 
+          Science and Development, but I am open to opportunities 
+          in the most diverse areas.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
