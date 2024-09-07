@@ -70,12 +70,8 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17x] max-w-3xl leading-[30px]">
-            It has survived not only five centuries, but also the leap 
-            into electronic typesetting, remaining essentially unchanged. 
-            It was popularised in the 1960s with the release of Letraset 
-            sheets containing Lorem Ipsum passages, and more recently with 
-            desktop publishing software like Aldus PageMaker including 
-            versions of Lorem Ipsum.
+            Below you can fing my main projects, its source 
+            codes and the technologies used in its development.
         </motion.p>
       </div>
 
