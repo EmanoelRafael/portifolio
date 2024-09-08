@@ -8,6 +8,7 @@ import { logo, menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  const [lang, setLang] = useState(true);
 
   return (
     <nav
@@ -26,6 +27,14 @@ const Navbar = () => {
               <span className='sm:block hidden'> | Computer Engineering</span>
             </p>
         </Link>
+
+        <button onClick={() => {
+          setLang(!lang);
+        }}
+          className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'>
+          {lang?"En-Us":"Pt-Br"}
+        </button>
+
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link)=> (
             <li 
