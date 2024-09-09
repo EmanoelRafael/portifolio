@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
 import { logo } from '../assets';
 
-const Hero = () => {
+const Hero = ({lang}) => {
   return (
     <section className='relative w-full h-screen mx-auto' 
     >
@@ -15,14 +15,15 @@ const Hero = () => {
             <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
             <div className='w-1 sm:h-80 h-40 violet-gradient'/>
           </div>
-
+          {/* {lang?"":""} */}
           <div>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span className='text-[#915eff]'>Emanoel</span>
+            {lang?"Hi, I'm":"Olá, Eu sou"} <span className='text-[#915eff]'>Emanoel</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I'm a computer engineering student <br className='sm:block hidden'/>
-              and I solve problems with technology.
+            {lang?"I'm a computer engineering student":"Eu sou um estudante de Engenharia da Computação"} <br className='sm:block hidden'/>
+            {lang?"and I solve problems with technology.":"e resolvo problemas utilizando a tecnologia"}
+              
             </p>
           </div>
         </div>

@@ -21,33 +21,40 @@ import {
   export const navLinks = [
     {
       id: "about",
-      title: "About",
+      title_en: "About",
+      title_pt: "Sobre",
     },
     {
       id: "work",
-      title: "Work",
+      title_en: "Work",
+      title_pt: "Trabalhos",
     },
     {
       id: "contact",
-      title: "Contact",
+      title_en: "Contact",
+      title_pt: "Contato",
     },
   ];
   
   const services = [
     {
-      title: "Backend Developer",
+      title_en: "Backend Developer",
+      title_pt: "Desenvolvedor Backend",
       icon: backend,
     },
     {
-      title: "Data Analysis",
+      title_en: "Data Analysis",
+      title_pt: "Análise de Dados",
       icon: data_analysis,
     },
     {
-      title: "Data Engineering",
+      title_en: "Data Engineering",
+      title_pt: "Engenharia de Dados",
       icon: data_engineering,
     },
     {
-      title: "Software Engineering",
+      title_en: "Software Engineering",
+      title_pt: "Engenharia de Software",
       icon: software_engineering,
     },
   ];
@@ -89,29 +96,45 @@ import {
   
   const experiences = [
     {
-      title: "Teacher Assistant of Data Structures and Algorithms ",
+      title_en: "Teacher Assistant of Data Structures and Algorithms ",
+      title_pt: "Monitor da Disciplina de Estruturas de Dados e Algoritmos",
       company_name: "Cin-UFPE",
       icon: cin_ufpe,
       iconBg: "#383E56",
-      date: "Feb 2022 - Jul 2022",
-      points: [
+      date_en: "Feb 2022 - Jul 2022",
+      date_pt: "Fev 2022 - Jul 2022",
+      points_en: [
         "Assist the teacher in preparing exercise lists.",
         "Prepare and teach tutoring classes.",
         "Correct students' exercise lists, checking for syntax and logic errors in the codes.",
         "Assist students in classes, clarifying possible doubts regarding algorithms and data structures while solving the exercise lists.",
       ],
+      points_pt: [
+        "Auxiliar o professor na elaboração das listas de exercícios.",
+        "Elaborar e ministrar aulas de monitoria.",
+        "Corrigir as listas de exercícios dos alunos, verificando erros de sintaxe e lógica nos códigos.",
+        "Auxiliar os alunos nas aulas, esclarecendo possíveis dúvidas quanto aos algoritmos e as estruturas de dados durante a resolução das listas de exercícios.",
+      ],
     },
     {
-      title: "Internship at the Cin-Motorola project",
+      title_en: "Internship at the Cin-Motorola project",
+      title_pt: "Estágio no Projeto cin-motorola",
       company_name: "Fade-UFPE",
       icon: motorola,
       iconBg: "#E6DEDD",
-      date: "Jun 2022 - Jun 2024",
-      points: [
+      date_en: "Jun 2022 - Jun 2024",
+      date_pt: "Jun 2022 - Jun 2024",
+      points_en: [
         "I worked on the development of an audio test automation tool at the Cin-Motorola agreement.",
         "Performing validation tests for the tool.",
         "Analysis of the results of the validation tests, producing visual material for later sharing with the team.",
         "Development and maintenance of machine learning models for use in research.",
+      ],
+      points_pt: [
+        "Trabalhei no desenvolvimento de uma ferramenta de automação de testes de áudios no convênio Cin-Motorola.",
+        "Realização de testes de validação da ferramenta.",
+        "Análise dos resultados dos testes de validação, produzindo material visual para posterior compartilhamento com a equipe.",
+        "Desenvolvimento e manutenção de modelos de aprendizagem de máquina para utilização na pesquisa.",
       ],
     },
   ];
@@ -120,8 +143,10 @@ import {
   const projects = [
     {
       name: "Secou",
-      description:
+      description_en:
         "Secou is an application that consists in monitoring and informing the flooded points of a city.",
+      description_pt:
+        "Secou é uma aplicação que consiste no monitoramento e informação dos pontos de alagamento de uma cidade.",
       tags: [
         {
           name: "ionic",

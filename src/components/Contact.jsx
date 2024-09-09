@@ -11,7 +11,7 @@ import { slideIn } from '../utils/motion'
 //service_8xmfe61
 //ubmlBTjxZs0afOCfj
 
-const Contact = () => {
+const Contact = ({lang}) => {
 
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -59,41 +59,41 @@ const Contact = () => {
       <motion.div
         variants={slideIn('left','tween', 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
-          <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
+          <p className={styles.sectionSubText}>{lang?"Get in touch":"Entre em contato"}</p>
+          <h3 className={styles.sectionHeadText}>{lang?"Contact":"Contato"}</h3>
 
           <form 
             ref={formRef}
             onSubmit={handleSubmit}
             className='m-12 flex flex-col gap-8'>
               <label className='flex flex-col'>
-                <span className='text-white font-medium mb-4'>Your Name</span>
+                <span className='text-white font-medium mb-4'>{lang?"Your Name":"Seu Nome"}</span>
                 <input 
                   type="text"
                   name='name'
                   value={form.name}
                   onChange={handleChange}
-                  placeholder="What's your name?"
+                  placeholder={lang?"What's your name?":"Qual é o seu nome?"}
                   className='bg-tertiary by-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
               </label>
               <label className='flex flex-col'>
-                <span className='text-white font-medium mb-4'>Your Email</span>
+                <span className='text-white font-medium mb-4'>{lang?"Your Email":"Seu Email"}</span>
                 <input 
                   type="email"
                   name='email'
                   value={form.email}
                   onChange={handleChange}
-                  placeholder="What's your email?"
+                  placeholder={lang?"What's your email?":"Qual é o seu email?"}
                   className='bg-tertiary by-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
               </label>
               <label className='flex flex-col'>
-                <span className='text-white font-medium mb-4'>Your Message</span>
+                <span className='text-white font-medium mb-4'>{lang?"Your Message":"Sua Mensagem"}</span>
                 <textarea 
                   rows={7}
                   name='message'
                   value={form.message}
                   onChange={handleChange}
-                  placeholder="What do you want to say?"
+                  placeholder={lang?"What do you want to say?":"O que você quer me dizer?"}
                   className='bg-tertiary by-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
               </label>
               <button

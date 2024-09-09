@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({index, name, description_en, description_pt, tags, image, source_code_link, lang}) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index*0.5, 0.75)}>
       <Tilt
@@ -36,7 +36,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
 
           <div className="mt-5">
             <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px]">{description}</p>
+            <p className="mt-2 text-secondary text-[14px]">{lang?description_en:description_pt}</p>
           </div>
 
           <div className="mt-4 flex flex-wrap gap-2">
@@ -54,15 +54,15 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
 }
 
 
-const Works = () => {
+const Works = ({lang}) => {
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
-          My work
+          {lang?"My work":"Meu Trabalho"}
         </p>
         <h2 className={styles.sectionHeadText}>
-          Projects.
+        {lang?"Projects":"Projetos"}
         </h2>
       </motion.div>
 
@@ -70,8 +70,8 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17x] max-w-3xl leading-[30px]">
-            Below you can fing my main projects, its source 
-            codes and the technologies used in its development.
+            {lang?"Below you can fing my main projects, its source codes and the technologies used in its development."
+            :"Abaixo você pode encontrar meus projetos principais, seu código fonte e as tecnologias utilizadas no seu desenvolvimento."}
         </motion.p>
       </div>
 
@@ -80,7 +80,8 @@ const Works = () => {
           <ProjectCard 
             key={`project-${index}`}
             index={index}
-            {...project}/>
+            {...project}
+            lang={lang}/>
           ))}
       </div>
 

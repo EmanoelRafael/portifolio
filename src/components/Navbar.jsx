@@ -5,10 +5,10 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 
-const Navbar = () => {
+const Navbar = ({lang, onChangeLang}) => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
-  const [lang, setLang] = useState(true);
+  //const [lang, setLang] = useState(true);
 
   return (
     <nav
@@ -24,13 +24,11 @@ const Navbar = () => {
           }}>
             <img src={logo} alt="logo" className='w-9 h-9 object-contain'/>
             <p className='text-white text-[18px] font-bold cursor-pointer flex'>Emanoel Rafael &nbsp;
-              <span className='sm:block hidden'> | Computer Engineering</span>
+              <span className='sm:block hidden'> | {lang?"Computer Engineering":"Engenharia da Computação"}</span>
             </p>
         </Link>
 
-        <button onClick={() => {
-          setLang(!lang);
-        }}
+        <button id='langButton' onClick={onChangeLang}
           className='text-secondary hover:text-white text-[18px] font-medium cursor-pointer'>
           {lang?"En-Us":"Pt-Br"}
         </button>
@@ -44,9 +42,9 @@ const Navbar = () => {
                   ? "text-white"
                   : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)} 
+              onClick={() => setActive(link.title_en)} 
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>{lang?link.title_en:link.title_pt}</a>
             </li>
           ))}
         </ul>
