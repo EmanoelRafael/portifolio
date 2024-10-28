@@ -15,7 +15,7 @@ function App() {
           <Tech />
           <Works lang={lang} />
           <Contact lang={lang} />
-          <StarsCanvas />
+          {/*<StarsCanvas />*/}
         </div>
       </div>
     </BrowserRouter>
