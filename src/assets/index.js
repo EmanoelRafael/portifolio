@@ -38,6 +38,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import secou from "./secou.png";
+import meusFlashcards from "./Meus_Flashcards.png";
 
 export {
   logo,
@@ -77,4 +78,5 @@ export {
   java,
   cin_ufpe,
   motorola,
+  meusFlashcards
 };

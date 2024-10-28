@@ -16,6 +16,7 @@ import {
     secou,
     motorola,
     cin_ufpe,
+    meusFlashcards,
   } from "../assets";
   
   export const navLinks = [
@@ -164,6 +165,29 @@ import {
       image: secou,
       source_code_link: "https://github.com/saranicoly/secou",
     },
+    {
+      name: "My Flashcards",
+      description_en:
+        "My Flashcards is an easy way to story flashcards grouping by tags, making the study process much easier.",
+      description_pt:
+        "Meus Flashcards é uma maneira fácil de armazenar flashcards, agupando-os por tags, tornando o estudo mais fácil.",
+      tags: [
+        {
+          name: "react",
+          color: "green-text-gradient",
+        },
+        {
+          name: "NodeJS",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "TailwindCSS",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: meusFlashcards,
+      source_code_link: "https://github.com/EmanoelRafael/flashcards.git",
+    }
   ];
   
   export { services, technologies, experiences, projects };
