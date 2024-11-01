@@ -1,6 +1,8 @@
 import logo from "./logo.png";
 import backend from "./backend.png";
 import github from "./github.png";
+import icon_linkedin from "./icon-linkedin.svg";
+import icon_github from "./icon-github.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import data_analysis from "./data_analysis.png";
@@ -44,6 +46,8 @@ export {
   logo,
   backend,
   github,
+  icon_linkedin,
+  icon_github,
   menu,
   close,
   css,

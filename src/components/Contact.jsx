@@ -6,6 +6,7 @@ import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import { icon_linkedin, icon_github } from '../assets'
 
 //template_o8ixtwr
 //service_8xmfe61
@@ -59,7 +60,23 @@ const Contact = ({lang}) => {
       <motion.div
         variants={slideIn('left','tween', 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
-          <p className={styles.sectionSubText}>{lang?"Get in touch":"Entre em contato"}</p>
+          <div className="flex items-center gap-4 mb-4">
+            <p className={styles.sectionSubText}>{lang ? "Get in touch" : "Entre em contato"}</p>
+            <div className="flex gap-3">
+              <a href="https://br.linkedin.com/in/emanoel-rafael-767138218" target="_blank" rel="noopener noreferrer">
+                <button className="text-white bg-blue-600 rounded-full p-2 hover:bg-tertiary">
+                  {/* Ícone do LinkedIn */}
+                  <img src={icon_linkedin} className="w-6 h-6"/>
+                </button>
+              </a>
+              <a href="https://github.com/EmanoelRafael" target="_blank" rel="noopener noreferrer">
+                <button className="text-white bg-gray-800 rounded-full p-2 hover:bg-tertiary">
+                  {/* Ícone do GitHub */}
+                  <img src={icon_github} className="w-6 h-6"/>
+                </button>
+              </a>
+            </div>
+          </div>
           <h3 className={styles.sectionHeadText}>{lang?"Contact":"Contato"}</h3>
 
           <form 

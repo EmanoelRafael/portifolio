@@ -11,8 +11,6 @@ import {
     sql,
     git,
     docker,
-    starbucks,
-    tesla,
     secou,
     motorola,
     cin_ufpe,
